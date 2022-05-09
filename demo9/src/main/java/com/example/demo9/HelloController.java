@@ -37,6 +37,14 @@ public class HelloController {
         double pole_p = 2*3.14*d_promien*d_promien;
         double pole_c = pole_b + pole_p; // mm^2
 
+        double ciezar = 7.85d; //na m^2 przy 1mm grubosci
+
+        double ciezar_blachy = (pole_c/10000)*d_grubosc*ciezar;
+
+        String temp = Double.toString(pole_c/10000);
+        String temp2 = Double.toString(ciezar_blachy);
+        String wynik = "Do wykonania walca, potrzeba będzie: "+ temp + " metrów kwadratowych blachy.\n Jej cięzar wynosi "+temp2+" kg.";
+        results_ID.appendText(wynik);
 
     }
 
