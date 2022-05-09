@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo9.HelloController">
+   <children>
+      <TextArea  fx:id="results_ID" layoutX="338.0" layoutY="54.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextField fx:id="promien_ID" layoutX="78.0" layoutY="82.0" />
+      <TextField fx:id="wysokosc_ID" layoutX="78.0" layoutY="118.0" />
+      <TextField fx:id="grubosc_ID" layoutX="78.0" layoutY="154.0" />
+      <Button layoutX="101.0" layoutY="200.0" mnemonicParsing="false" onAction="#oblicz" text="Button" />
+   </children>
+</AnchorPane>
