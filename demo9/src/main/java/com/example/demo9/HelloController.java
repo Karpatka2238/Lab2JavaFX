@@ -25,6 +25,8 @@ public class HelloController {
         return n;
     }
 
+
+
     @FXML
     protected void oblicz () {
         results_ID.setText(""); //wyczycic TextArea przed wyswietleniem
@@ -41,8 +43,8 @@ public class HelloController {
 
         double ciezar_blachy = (pole_c/10000)*d_grubosc*ciezar;
 
-        String temp = Double.toString(pole_c/10000);
-        String temp2 = Double.toString(ciezar_blachy);
+        String temp = Double.toString(truncate(pole_c/10000));
+        String temp2 = Double.toString(truncate(ciezar_blachy));
         String wynik = "Do wykonania walca, potrzeba będzie: "+ temp + " metrów kwadratowych blachy.\n Jej cięzar wynosi "+temp2+" kg.";
         results_ID.appendText(wynik);
 
